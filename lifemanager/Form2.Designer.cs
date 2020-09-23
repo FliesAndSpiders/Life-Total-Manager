@@ -332,10 +332,10 @@
             this.LeftPlayersName.TabIndex = 109;
             this.LeftPlayersName.Text = "Left Player\'s Name";
             this.LeftPlayersName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-<<<<<<< HEAD
-=======
+ 
+ 
             this.LeftPlayersName.Click += new System.EventHandler(this.LeftPlayersName_Click);
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             // 
             // LeftPlayersDeck
             // 

@@ -382,10 +382,7 @@
             this.LeftPlayersName.TabIndex = 76;
             this.LeftPlayersName.Text = "Left Player\'s Name";
             this.LeftPlayersName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-<<<<<<< HEAD
-=======
             this.LeftPlayersName.Click += new System.EventHandler(this.LeftPlayersName_Click);
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
             // 
             // LeftPlayersDeck
             // 
@@ -398,6 +395,7 @@
             this.LeftPlayersDeck.TabIndex = 77;
             this.LeftPlayersDeck.Text = "Left Player\'s Deck";
             this.LeftPlayersDeck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LeftPlayersDeck.Click += new System.EventHandler(this.LeftPlayersDeck_Click);
             // 
             // RightPlayersName
             // 
@@ -409,6 +407,7 @@
             this.RightPlayersName.TabIndex = 78;
             this.RightPlayersName.Text = "Right Player\'s Name";
             this.RightPlayersName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RightPlayersName.Click += new System.EventHandler(this.RightPlayersName_Click);
             // 
             // RightPlayersDeck
             // 
@@ -421,6 +420,7 @@
             this.RightPlayersDeck.TabIndex = 79;
             this.RightPlayersDeck.Text = "Right Player\'s Deck";
             this.RightPlayersDeck.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RightPlayersDeck.Click += new System.EventHandler(this.RightPlayersDeck_Click);
             // 
             // TimerText
             // 
@@ -432,6 +432,7 @@
             this.TimerText.TabIndex = 80;
             this.TimerText.Text = "00:00:00";
             this.TimerText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TimerText.Click += new System.EventHandler(this.TimerText_Click);
             // 
             // LeftGamesWon
             // 
@@ -443,6 +444,7 @@
             this.LeftGamesWon.TabIndex = 81;
             this.LeftGamesWon.Text = "0";
             this.LeftGamesWon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LeftGamesWon.Click += new System.EventHandler(this.LeftGamesWon_Click);
             // 
             // RightGamesWon
             // 
@@ -454,6 +456,7 @@
             this.RightGamesWon.TabIndex = 82;
             this.RightGamesWon.Text = "0";
             this.RightGamesWon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RightGamesWon.Click += new System.EventHandler(this.RightGamesWon_Click);
             // 
             // button18
             // 
@@ -537,6 +540,7 @@
             this.LeftInfectCounter.TabIndex = 87;
             this.LeftInfectCounter.Text = "0";
             this.LeftInfectCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LeftInfectCounter.Click += new System.EventHandler(this.LeftInfectCounter_Click);
             // 
             // RightInfectCounter
             // 
@@ -548,6 +552,7 @@
             this.RightInfectCounter.TabIndex = 88;
             this.RightInfectCounter.Text = "0";
             this.RightInfectCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RightInfectCounter.Click += new System.EventHandler(this.RightInfectCounter_Click);
             // 
             // label1
             // 
@@ -573,6 +578,7 @@
             this.label2.TabIndex = 90;
             this.label2.Text = "20";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // timer1
             // 

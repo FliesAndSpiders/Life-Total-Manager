@@ -1,4 +1,4 @@
-cd /
+cd C:
 cd "C:\Program Files"
 mkdir "Life_Manager_Overlay_Documents"
 pause

@@ -18,10 +18,10 @@ namespace lifemanager
         public Form1()
         {
             InitializeComponent();
-            textBox2.PasswordChar = '*';
-            textBox4.PasswordChar = '*';
-            textBox6.PasswordChar = '*';
-            textBox8.PasswordChar = '*';
+            //textBox2.PasswordChar = '*';
+            //textBox4.PasswordChar = '*';
+            //textBox6.PasswordChar = '*';
+            //textBox8.PasswordChar = '*';
             button2.Enabled = false;
             button3.Enabled = false;
             button4.Enabled = false;
@@ -112,18 +112,7 @@ namespace lifemanager
             Form2 frm2 = new Form2();
             Form3 frm3 = new Form3();
             Form4 frm4 = new Form4();
-<<<<<<< HEAD
-            StreamWriter playerOneName = new StreamWriter("D:\\ProgramDocuments\\playerOneName.txt");
-            playerOneName.Write(textBox1.Text.ToString().ToUpper());
-            playerOneName.Close();
-            StreamWriter playerOneDeck = new StreamWriter("D:\\ProgramDocuments\\playerOneDeck.txt");
-            playerOneDeck.Write(textBox2.Text.ToString().ToUpper());
-            playerOneDeck.Close();
-            StreamWriter playerTwoName = new StreamWriter("D:\\ProgramDocuments\\playerTwoName.txt");
-            playerTwoName.Write(textBox3.Text.ToString().ToUpper());
-            playerTwoName.Close();
-            StreamWriter playerTwoDeck = new StreamWriter("D:\\ProgramDocuments\\playerTwoDeck.txt");
-=======
+ 
             StreamWriter playerOneName = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneName.txt");
             playerOneName.Write(textBox1.Text.ToString().ToUpper());
             playerOneName.Close();
@@ -134,7 +123,7 @@ namespace lifemanager
             playerTwoName.Write(textBox3.Text.ToString().ToUpper());
             playerTwoName.Close();
             StreamWriter playerTwoDeck = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoDeck.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoDeck.Write(textBox4.Text.ToString().ToUpper());
             playerTwoDeck.Close();
             if (gametype == "yugioh")
@@ -152,7 +141,9 @@ namespace lifemanager
             } 
             else if (gametype == "2HG")
             {
-                System.Windows.Forms.MessageBox.Show("This function does not currently work :(");
+                this.Hide();
+                frm4.ShowDialog();
+                this.Close();
             } 
             else if (gametype == "commander")
             {

@@ -35,11 +35,7 @@ namespace lifemanager
         {
             TimerText.Text = TimeSpan.FromSeconds(double.Parse(TimerTime.ToString())).ToString();
             TimerTime--;
-<<<<<<< HEAD
-            StreamWriter TimerDoc = new StreamWriter("D:\\ProgramDocuments\\Timer.txt");
-=======
             StreamWriter TimerDoc = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\Timer.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
             TimerDoc.Write(TimerText.Text);
             TimerDoc.Close();
         }
@@ -51,21 +47,13 @@ namespace lifemanager
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            if (LeftPlayersName.ToString() != File.ReadAllText("D:\\ProgramDocuments\\playerOneName.txt").ToString())
-            {
-                LeftPlayersName.Text = File.ReadAllText("D:\\ProgramDocuments\\playerOneName.txt").ToString();
-                LeftPlayersDeck.Text = File.ReadAllText("D:\\ProgramDocuments\\playerOneDeck.txt").ToString();
-                RightPlayersName.Text = File.ReadAllText("D:\\ProgramDocuments\\playerTwoName.txt").ToString();
-                RightPlayersDeck.Text = File.ReadAllText("D:\\ProgramDocuments\\playerTwoDeck.txt").ToString();
-=======
             if (LeftPlayersName.ToString() != File.ReadAllText("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneName.txt").ToString())
             {
                 LeftPlayersName.Text = File.ReadAllText("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneName.txt").ToString();
                 LeftPlayersDeck.Text = File.ReadAllText("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneDeck.txt").ToString();
                 RightPlayersName.Text = File.ReadAllText("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoName.txt").ToString();
                 RightPlayersDeck.Text = File.ReadAllText("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoDeck.txt").ToString();
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
                 timer2.Stop();
             }
         }
@@ -75,11 +63,9 @@ namespace lifemanager
             double temp = int.Parse(label1.Text);
             temp--;
             label1.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
+  
             StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneLifeTotal.Write(label1.Text);
             playerOneLifeTotal.Close();
         }
@@ -89,11 +75,10 @@ namespace lifemanager
             double temp = int.Parse(label1.Text);
             temp-=5;
             label1.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
+ 
+ 
             StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneLifeTotal.Write(label1.Text);
             playerOneLifeTotal.Close();
         }
@@ -103,11 +88,10 @@ namespace lifemanager
             double temp = int.Parse(label1.Text);
             temp-=10;
             label1.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
+ 
+ 
             StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneLifeTotal.Write(label1.Text);
             playerOneLifeTotal.Close();
         }
@@ -117,11 +101,9 @@ namespace lifemanager
             double temp = int.Parse(label1.Text);
             temp++;
             label1.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
+  
             StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneLifeTotal.Write(label1.Text);
             playerOneLifeTotal.Close();
         }
@@ -131,11 +113,9 @@ namespace lifemanager
             double temp = int.Parse(label1.Text);
             temp+=5;
             label1.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
+  
             StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneLifeTotal.Write(label1.Text);
             playerOneLifeTotal.Close();
         }
@@ -145,11 +125,9 @@ namespace lifemanager
             double temp = int.Parse(label1.Text);
             temp += 10;
             label1.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
+  
             StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneLifeTotal.Write(label1.Text);
             playerOneLifeTotal.Close();
         }
@@ -159,11 +137,9 @@ namespace lifemanager
             double temp = int.Parse(label2.Text);
             temp--;
             label2.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-=======
+  
             StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoLifeTotal.Write(label2.Text);
             playerTwoLifeTotal.Close();
         }
@@ -173,11 +149,9 @@ namespace lifemanager
             double temp = int.Parse(label2.Text);
             temp -= 5;
             label2.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-=======
+  
             StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoLifeTotal.Write(label2.Text);
             playerTwoLifeTotal.Close();
         }
@@ -187,11 +161,9 @@ namespace lifemanager
             double temp = int.Parse(label2.Text);
             temp -= 10;
             label2.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-=======
+  
             StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoLifeTotal.Write(label2.Text);
             playerTwoLifeTotal.Close();
         }
@@ -201,11 +173,9 @@ namespace lifemanager
             double temp = int.Parse(label2.Text);
             temp++;
             label2.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-=======
+  
             StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoLifeTotal.Write(label2.Text);
             playerTwoLifeTotal.Close();
         }
@@ -215,11 +185,9 @@ namespace lifemanager
             double temp = int.Parse(label2.Text);
             temp += 5;
             label2.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-=======
+  
             StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoLifeTotal.Write(label2.Text);
             playerTwoLifeTotal.Close();
         }
@@ -229,11 +197,9 @@ namespace lifemanager
             double temp = int.Parse(label2.Text);
             temp += 10;
             label2.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-=======
+  
             StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoLifeTotal.Write(label2.Text);
             playerTwoLifeTotal.Close();
         }
@@ -243,11 +209,9 @@ namespace lifemanager
             double temp = int.Parse(LeftInfectCounter.Text);
             temp++;
             LeftInfectCounter.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneInfect = new StreamWriter("D:\\ProgramDocuments\\playerOneInfect.txt");
-=======
+  
             StreamWriter playerOneInfect = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneInfect.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneInfect.Write(LeftInfectCounter.Text);
             playerOneInfect.Close();
         }
@@ -257,11 +221,9 @@ namespace lifemanager
             double temp = int.Parse(LeftInfectCounter.Text);
             temp--;
             LeftInfectCounter.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneInfect = new StreamWriter("D:\\ProgramDocuments\\playerOneInfect.txt");
-=======
+  
             StreamWriter playerOneInfect = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneInfect.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneInfect.Write(LeftInfectCounter.Text);
             playerOneInfect.Close();
         }
@@ -271,11 +233,9 @@ namespace lifemanager
             double temp = int.Parse(RightInfectCounter.Text);
             temp++;
             RightInfectCounter.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoInfect = new StreamWriter("D:\\ProgramDocuments\\playerTwoInfect.txt");
-=======
+  
             StreamWriter playerTwoInfect = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoInfect.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoInfect.Write(RightInfectCounter.Text);
             playerTwoInfect.Close();
         }
@@ -285,11 +245,9 @@ namespace lifemanager
             double temp = int.Parse(RightInfectCounter.Text);
             temp--;
             RightInfectCounter.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoInfect = new StreamWriter("D:\\ProgramDocuments\\playerTwoInfect.txt");
-=======
+  
             StreamWriter playerTwoInfect = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoInfect.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoInfect.Write(RightInfectCounter.Text);
             playerTwoInfect.Close();
         }
@@ -299,28 +257,11 @@ namespace lifemanager
             double temp = int.Parse(LeftGamesWon.Text);
             temp++;
             LeftGamesWon.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneWins = new StreamWriter("D:\\ProgramDocuments\\playerOneWins.txt");
-=======
+  
             StreamWriter playerOneWins = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneWins.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneWins.Write(LeftGamesWon.Text);
             playerOneWins.Close();
-            label1.Text = "20";
-            label2.Text = "20";
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-            playerTwoLifeTotal.Write(label2.Text);
-            playerTwoLifeTotal.Close();
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
-            StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
-            playerTwoLifeTotal.Write(label2.Text);
-            playerTwoLifeTotal.Close();
-            StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
-            playerOneLifeTotal.Write(label1.Text);
-            playerOneLifeTotal.Close();
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -328,11 +269,9 @@ namespace lifemanager
             double temp = int.Parse(LeftGamesWon.Text);
             temp--;
             LeftGamesWon.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerOneWins = new StreamWriter("D:\\ProgramDocuments\\playerOneWins.txt");
-=======
+  
             StreamWriter playerOneWins = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneWins.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerOneWins.Write(LeftGamesWon.Text);
             playerOneWins.Close();
         }
@@ -342,11 +281,9 @@ namespace lifemanager
             double temp = int.Parse(RightGamesWon.Text);
             temp--;
             RightGamesWon.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoWins = new StreamWriter("D:\\ProgramDocuments\\playerTwoWins.txt");
-=======
+  
             StreamWriter playerTwoWins = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoWins.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoWins.Write(RightGamesWon.Text);
             playerTwoWins.Close();
         }
@@ -356,32 +293,16 @@ namespace lifemanager
             double temp = int.Parse(RightGamesWon.Text);
             temp++;
             RightGamesWon.Text = temp.ToString();
-<<<<<<< HEAD
-            StreamWriter playerTwoWins = new StreamWriter("D:\\ProgramDocuments\\playerTwoWins.txt");
-=======
+  
             StreamWriter playerTwoWins = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoWins.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+ 
             playerTwoWins.Write(RightGamesWon.Text);
             playerTwoWins.Close();
-            label1.Text = "20";
-            label2.Text = "20";
-<<<<<<< HEAD
-            StreamWriter playerTwoLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerTwoLifeTotal.txt");
-            playerTwoLifeTotal.Write(label2.Text);
-            playerTwoLifeTotal.Close();
-            StreamWriter playerOneLifeTotal = new StreamWriter("D:\\ProgramDocuments\\playerOneLifeTotal.txt");
-=======
-            StreamWriter playerTwoLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerTwoLifeTotal.txt");
-            playerTwoLifeTotal.Write(label2.Text);
-            playerTwoLifeTotal.Close();
-            StreamWriter playerOneLifeTotal = new StreamWriter("C:\\Program files\\Life_Manager_Overlay_Documents\\playerOneLifeTotal.txt");
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
-            playerOneLifeTotal.Write(label1.Text);
-            playerOneLifeTotal.Close();
         }
 
         private void MainMenuButton_Click(object sender, EventArgs e)
         {
+            timer1.Dispose();
             Form1 frm1 = new Form1();
             this.Hide();
             frm1.ShowDialog();
@@ -392,13 +313,57 @@ namespace lifemanager
         {
 
         }
-<<<<<<< HEAD
-=======
+ 
+ 
 
         private void LeftPlayersName_Click(object sender, EventArgs e)
         {
 
         }
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RightInfectCounter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeftInfectCounter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RightGamesWon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeftGamesWon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TimerText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RightPlayersDeck_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RightPlayersName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeftPlayersDeck_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MainMenuButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,6 +62,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // MainMenuButton
@@ -79,6 +82,7 @@
             this.MainMenuButton.Size = new System.Drawing.Size(244, 200);
             this.MainMenuButton.TabIndex = 124;
             this.MainMenuButton.UseVisualStyleBackColor = false;
+            this.MainMenuButton.Click += new System.EventHandler(this.MainMenuButton_Click);
             // 
             // label2
             // 
@@ -89,7 +93,7 @@
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(102, 45);
             this.label2.TabIndex = 123;
-            this.label2.Text = "20";
+            this.label2.Text = "60";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
@@ -101,7 +105,7 @@
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(89, 45);
             this.label1.TabIndex = 122;
-            this.label1.Text = "20";
+            this.label1.Text = "60";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // RightInfectCounter
@@ -142,6 +146,7 @@
             this.button21.Size = new System.Drawing.Size(34, 45);
             this.button21.TabIndex = 119;
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button20
             // 
@@ -159,6 +164,7 @@
             this.button20.Size = new System.Drawing.Size(34, 45);
             this.button20.TabIndex = 118;
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button19
             // 
@@ -176,6 +182,7 @@
             this.button19.Size = new System.Drawing.Size(34, 45);
             this.button19.TabIndex = 117;
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
@@ -193,12 +200,13 @@
             this.button18.Size = new System.Drawing.Size(34, 45);
             this.button18.TabIndex = 116;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // RightGamesWon
             // 
             this.RightGamesWon.BackColor = System.Drawing.Color.Transparent;
             this.RightGamesWon.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightGamesWon.Location = new System.Drawing.Point(787, 641);
+            this.RightGamesWon.Location = new System.Drawing.Point(781, 637);
             this.RightGamesWon.Name = "RightGamesWon";
             this.RightGamesWon.Size = new System.Drawing.Size(95, 45);
             this.RightGamesWon.TabIndex = 115;
@@ -209,7 +217,7 @@
             // 
             this.LeftGamesWon.BackColor = System.Drawing.Color.Transparent;
             this.LeftGamesWon.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftGamesWon.Location = new System.Drawing.Point(205, 641);
+            this.LeftGamesWon.Location = new System.Drawing.Point(199, 637);
             this.LeftGamesWon.Name = "LeftGamesWon";
             this.LeftGamesWon.Size = new System.Drawing.Size(98, 45);
             this.LeftGamesWon.TabIndex = 114;
@@ -289,6 +297,7 @@
             this.button17.Size = new System.Drawing.Size(39, 45);
             this.button17.TabIndex = 108;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button16
             // 
@@ -306,6 +315,7 @@
             this.button16.Size = new System.Drawing.Size(39, 45);
             this.button16.TabIndex = 107;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
@@ -323,6 +333,7 @@
             this.button15.Size = new System.Drawing.Size(39, 45);
             this.button15.TabIndex = 106;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -340,6 +351,7 @@
             this.button14.Size = new System.Drawing.Size(39, 45);
             this.button14.TabIndex = 105;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
@@ -357,6 +369,7 @@
             this.button13.Size = new System.Drawing.Size(180, 45);
             this.button13.TabIndex = 104;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button7
             // 
@@ -374,6 +387,7 @@
             this.button7.Size = new System.Drawing.Size(77, 45);
             this.button7.TabIndex = 103;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -391,6 +405,7 @@
             this.button8.Size = new System.Drawing.Size(82, 45);
             this.button8.TabIndex = 102;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -408,6 +423,7 @@
             this.button9.Size = new System.Drawing.Size(77, 45);
             this.button9.TabIndex = 101;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -425,6 +441,7 @@
             this.button10.Size = new System.Drawing.Size(82, 45);
             this.button10.TabIndex = 100;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -442,6 +459,7 @@
             this.button11.Size = new System.Drawing.Size(77, 45);
             this.button11.TabIndex = 99;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -459,6 +477,7 @@
             this.button12.Size = new System.Drawing.Size(82, 45);
             this.button12.TabIndex = 98;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button5
             // 
@@ -476,6 +495,7 @@
             this.button5.Size = new System.Drawing.Size(77, 45);
             this.button5.TabIndex = 97;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -493,6 +513,7 @@
             this.button6.Size = new System.Drawing.Size(82, 45);
             this.button6.TabIndex = 96;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -510,6 +531,7 @@
             this.button3.Size = new System.Drawing.Size(77, 45);
             this.button3.TabIndex = 95;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -527,6 +549,7 @@
             this.button4.Size = new System.Drawing.Size(82, 45);
             this.button4.TabIndex = 94;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -544,6 +567,7 @@
             this.button2.Size = new System.Drawing.Size(77, 45);
             this.button2.TabIndex = 93;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -561,6 +585,15 @@
             this.button1.Size = new System.Drawing.Size(82, 45);
             this.button1.TabIndex = 92;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form4
             // 
@@ -640,43 +673,12 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
+
+
 
         #endregion
-<<<<<<< HEAD
-=======
-        private System.Windows.Forms.Button MainMenuButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label RightInfectCounter;
-        private System.Windows.Forms.Label LeftInfectCounter;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Label RightGamesWon;
-        private System.Windows.Forms.Label LeftGamesWon;
-        private System.Windows.Forms.Label TimerText;
-        private System.Windows.Forms.Label RightPlayersDeck;
-        private System.Windows.Forms.Label RightPlayersName;
-        private System.Windows.Forms.Label LeftPlayersDeck;
-        private System.Windows.Forms.Label LeftPlayersName;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
->>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
+
+        private System.Windows.Forms.Timer timer2;
     }
 }
