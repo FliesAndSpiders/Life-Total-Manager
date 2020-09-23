@@ -16,5 +16,13 @@ namespace lifemanager
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 8da1ab384731b61258fb4306882045d0932c861f
     }
 }
